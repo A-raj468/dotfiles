@@ -17,6 +17,7 @@ Make sure the following tools are installed on your system:
 
 - `git` (for cloning the repository)
 - `stow` (for creating symlinks)
+- `wget` and `curl` (for downloading plugins)
 
 You can install these using your package manager. For example, on a Debian-based system:
 

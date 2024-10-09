@@ -41,8 +41,8 @@ zinit cdreplay -q
 
 # Keybindings
 bindkey -e
-bindkey '^p' history-search-backward
-bindkey '^n' history-search-forward
+bindkey '^p' up-line-or-search
+bindkey '^n' down-line-or-search
 
 # History
 HISTSIZE=5000
@@ -117,12 +117,11 @@ lloutput() {
 }
 
 export PATH="$PATH:/usr/local/go/bin"
-export PATH="$PATH:$HOME/.local/bin"
 export PATH="$PATH:$HOME/llvm-project/build/bin/"
+export PATH="$PATH:/snap/bin"
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 # Shell integration
 # source <(fzf --zsh)
 eval $(fzf --zsh)
-eval "$(zoxide init --cmd cd zsh)"

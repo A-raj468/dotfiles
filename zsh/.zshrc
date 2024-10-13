@@ -116,7 +116,6 @@ lloutput() {
     opt-14 -instnamer -mem2reg -mergereturn -aa-pipeline='basic-aa' -S "${1%.*}.ll" > "${1%.*}.slim.ll"
 }
 
-export PATH="$PATH:/usr/local/go/bin"
 export PATH="$PATH:$HOME/llvm-project/build/bin/"
 export PATH="$PATH:/snap/bin"
 

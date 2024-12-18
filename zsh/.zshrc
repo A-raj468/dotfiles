@@ -5,7 +5,7 @@ eval $(fzf --zsh)
 tmux_default() {
     if command -v tmux &> /dev/null; then
         if [[ -z "$TMUX" && -z "$SSH_CONNECTION" ]]; then
-            tmux new-session -A -s start -c ~ 
+            tmux new-session -A -s start -c ~
         fi
     fi
 }
@@ -32,7 +32,8 @@ fi
 source "${ZINIT_HOME}/zinit.zsh"
 
 # Powerlevel10k
-zinit ice depth=1; zinit light romkatv/powerlevel10k
+zinit ice depth=1
+zinit light romkatv/powerlevel10k
 
 # Plugins
 zinit light zsh-users/zsh-syntax-highlighting

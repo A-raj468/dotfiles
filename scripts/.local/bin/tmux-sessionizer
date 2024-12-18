@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-search_dirs="~ ~/.config ~/Contest/Advent"
+search_dirs="~ ~/.config ~/Contest/Advent ~/github/"
 
 get_directories() {
     cmd="find $search_dirs -mindepth 1 -maxdepth 1 ! -name '.*' \( -type d -o -type l -xtype d \) | fzf"

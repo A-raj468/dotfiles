@@ -81,9 +81,6 @@ zstyle ':completion:*' menu no
 zstyle ':fzf-tab:complete:cd:*' fzf-preview 'ls --color $realpath'
 zstyle ':fzf-tab:complete:__zoxide_z:*' fzf-preview 'ls --color $realpath'
 
-# Aliases
-alias ls='ls --color'
-
 # Function to search for a directory
 search_directory() {
     local target_directory="$1"
@@ -122,13 +119,10 @@ activate() {
     source "$directoryName/bin/activate"
 }
 
-alias ac=activate
-alias dac=deactivate
+# Aliases
+alias ls='ls --color'
+alias ac="activate"
+alias dac="deactivate"
+alias td="tmux_default"
 
-lloutput() {
-    clang-14 -fno-discard-value-names -emit-llvm -O0 -Xclang -disable-O0-optnone -g -S "$1" -o "${1%.*}.ll"
-    opt-14 -instnamer -mem2reg -mergereturn -aa-pipeline='basic-aa' -S "${1%.*}.ll" > "${1%.*}.slim.ll"
-}
-
-export PATH="$PATH:$HOME/llvm-project/build/bin/"
 export PATH="$PATH:/snap/bin"

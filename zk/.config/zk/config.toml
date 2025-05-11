@@ -25,6 +25,8 @@ paths = ["daily"]
 [group.daily.note]
 filename = "{{format-date now '%Y-%m-%d'}}"
 
+template = "daily.md"
+
 
 # MARKDOWN SETTINGS
 [format.markdown]

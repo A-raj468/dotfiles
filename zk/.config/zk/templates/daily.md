@@ -1,10 +1,10 @@
 ---
-title: "Journal - {{format-date now '%A, %Y-%m-%d'}}"
+title: "Journal - {{format-date now 'long'}}"
 created: "{{format-date now '%Y-%m-%d %H:%M'}}"
 tags: [daily]
 ---
 
-# {{format-date now "%A, %B %d, %Y"}}
+# Journal - {{format-date now 'long'}}
 
 ## Morning Thoughts
 

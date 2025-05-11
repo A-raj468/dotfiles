@@ -127,3 +127,4 @@ export PATH="/snap/bin:$PATH"
 export PATH="$HOME/neovim/bin:$PATH"
 export PATH="$HOME/zk:$PATH"
 export MANPAGER='nvim +Man!'
+export ZK_NOTEBOOK_DIR="$HOME/Personal/my-notes"

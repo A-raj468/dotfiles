@@ -123,5 +123,7 @@ alias ac="activate"
 alias dac="deactivate"
 alias td="tmux_default"
 
-export PATH="$PATH:/snap/bin"
+export PATH="/snap/bin:$PATH"
+export PATH="$HOME/neovim/bin:$PATH"
+export PATH="$HOME/zk:$PATH"
 export MANPAGER='nvim +Man!'

@@ -4,20 +4,58 @@ created: "{{format-date now '%Y-%m-%d %H:%M'}}"
 tags: [daily]
 ---
 
-# Journal - {{format-date now 'long'}}
+# "Journal - {{format-date now 'long'}}"
 
-## Morning Thoughts
+---
+
+## Morning Entry
+
+### Top 3 Priorities
+
+- [ ]
+- [ ]
+- [ ]
+
+### Appointments / Time Blocks
 
 -
 
-## What I Did Today
+### Review from Yesterday
+
+- One win:
+- One thing to improve:
+
+### Morning Reflection
+
+- Mood:
+- Energy:
+- Intention for the day:
+
+---
+
+## Evening Entry
+
+### Task Wrap-Up
+
+- [ ] Done?
+- [ ] Done?
+- [ ] Done?
+
+### What I Learned
 
 -
 
-## Notes & Ideas
+### Evening Reflection
+
+- How did the day go?
+- What worked well?
+- What didn’t?
+- What will I change tomorrow?
+
+### New Ideas or Notes
 
 -
 
-## Evening Reflection
+### Interesting Links or Resources
 
 -
